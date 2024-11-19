@@ -18,11 +18,13 @@
 
 body{
     background: #dae0e6;
+    overflow: hidden;
 }
 
 main{
     background: red;
     width: 100%;
+    height: 100vh;
 }
 
 h1{
@@ -35,16 +37,6 @@ h1{
         <h1>hola</h1>
     </main>
 
-    <script>
-        // Función para ajustar la altura del body
-        function ajustarAltura() {
-          // Establecer la altura del body al tamaño completo de la ventana visible
-          document.body.style.height = `${window.innerHeight}px`;
-        }
-    
-        // Llamar a la función al cargar la página y cuando cambie el tamaño de la ventana
-        window.addEventListener('load', ajustarAltura);
-        window.addEventListener('resize', ajustarAltura);
-      </script>
+
 </body>
 </html>
